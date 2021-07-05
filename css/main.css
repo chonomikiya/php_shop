@@ -1,0 +1,20 @@
+.debug-color{
+    background-color: black;
+}
+*{
+    box-sizing: border-box;
+}
+.root{
+    display: block;
+}
+.page-wrapper{
+    margin: 100px,100px;
+    min-width: 40ch;
+    max-width: 70ch;
+    
+}
+.header{
+    background-color: aqua;
+    width: auto;
+    height: 40px;
+}
