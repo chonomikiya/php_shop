@@ -36,13 +36,14 @@ dt{
 }
 /* コンテンツ */
 .container{
-    display: flex;
-    justify-items:flex-start;
+    display: block;
+    align-content: space-between; 
 }
 /* サイドバー */
 .sidebar{
+    float: left;
     width: 220px;
-    display: block;
+    margin: 0 10px 0 0;
 }
 .side-child{
     margin-bottom: 20px;
@@ -57,7 +58,8 @@ dt{
 }
 /* メインコンテンツ */
 .main-content{
-    width: 100px;
+    float: right;
+    min-width: 60%;
     height: 100px;
-    margin: auto;
+    justify-content: center;
 }
