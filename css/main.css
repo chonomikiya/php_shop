@@ -1,20 +1,63 @@
 .debug-color{
-    background-color: black;
-}
-*{
-    box-sizing: border-box;
+    background-color: gray;
 }
 .root{
     display: block;
 }
-.page-wrapper{
-    margin: 100px,100px;
-    min-width: 40ch;
-    max-width: 70ch;
-    
+div{
+    display: block;
 }
-.header{
+/* ヘッダー */
+header{
     background-color: aqua;
     width: auto;
-    height: 40px;
+    height: 140px;
+    position: relative;
+    margin-bottom: 40px;
+}
+dt{
+    text-align: center;
+}
+.page-wrapper{
+    margin: auto;
+    min-width: 768px;
+    max-width: 70vw;
+}
+/* フロントイメージ */
+.main-visual{
+    width: auto;
+    margin-bottom: 40px;
+}
+.main-image{
+    background-color: teal;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+}
+/* コンテンツ */
+.container{
+    display: flex;
+    justify-items:flex-start;
+}
+/* サイドバー */
+.sidebar{
+    width: 220px;
+    display: block;
+}
+.side-child{
+    margin-bottom: 20px;
+    width: auto;
+}
+.search-form{
+    display: flex;
+    justify-content: center;
+}
+.side-list-title{
+    text-align: center;
+}
+/* メインコンテンツ */
+.main-content{
+    width: 100px;
+    height: 100px;
+    margin: auto;
 }
