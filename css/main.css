@@ -21,7 +21,7 @@ dt{
 .page-wrapper{
     margin: auto;
     min-width: 768px;
-    max-width: 70vw;
+    max-width: 1000px;
 }
 /* フロントイメージ */
 .main-visual{
@@ -30,7 +30,7 @@ dt{
 }
 .main-image{
     background-color: teal;
-    width: 600px;
+    width: auto;
     height: 300px;
     margin: auto;
 }
@@ -58,8 +58,35 @@ dt{
 }
 /* メインコンテンツ */
 .main-content{
-    float: right;
     min-width: 60%;
-    height: 100px;
-    justify-content: center;
+    max-width: 80%;
+    margin: 0 0 0 260px;
+    height: 600px;
+}
+.breadcrumb{
+    border:solid;
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+}
+ul.breadcrumb{
+    list-style: none;
+}
+ul.breadcrumb li{
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li::before{
+    padding: 8px;
+    content: "/";
+}
+ul.breadcrumb li a{
+    text-decoration-line: none;
+    color: rgb(119, 183, 255);
+}
+.main-header{
+    padding: 8px;
+}
+.main-container{
+    display: grid;
 }
