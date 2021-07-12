@@ -84,9 +84,20 @@ ul.breadcrumb li a{
     text-decoration-line: none;
     color: rgb(119, 183, 255);
 }
+/* メインコンテンツ内 */
 .main-header{
     padding: 8px;
 }
 .main-container{
     display: grid;
+    justify-content: start;
+}
+.main-item{
+    width: 240px;
+    height: 240px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-gap: 16px;
+    margin: 10px;
 }
