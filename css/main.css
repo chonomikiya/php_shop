@@ -9,9 +9,8 @@ div{
 }
 /* ヘッダー */
 header{
-    background-color: aqua;
-    width: auto;
-    height: 140px;
+     width: auto;
+    height: 120px;
     position: relative;
     margin-bottom: 40px;
 }
@@ -22,6 +21,10 @@ dt{
     margin: auto;
     min-width: 768px;
     max-width: 1000px;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 140px;
+    box-sizing: border-box;
 }
 /* フロントイメージ */
 .main-visual{
@@ -29,7 +32,6 @@ dt{
     margin-bottom: 40px;
 }
 .main-image{
-    background-color: teal;
     width: auto;
     height: 300px;
     margin: auto;
@@ -61,7 +63,7 @@ dt{
     min-width: 60%;
     max-width: 80%;
     margin: 0 0 0 260px;
-    height: 600px;
+    height: auto;
 }
 .breadcrumb{
     border:solid;
@@ -89,15 +91,29 @@ ul.breadcrumb li a{
     padding: 8px;
 }
 .main-container{
+    width: auto;
+    min-height: auto;
     display: grid;
-    justify-content: start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
 }
 .main-item{
-    width: 240px;
-    height: 240px;
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    grid-template-rows: repeat(3, 3fr);
-    grid-gap: 16px;
-    margin: 10px;
+    /* width: 200px;
+    height: 200px;
+    margin: 10px; */
+    display: block;
+}
+.main-item img{
+    margin: auto;
+    width: 100%;
+    height: 200px;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
 }
