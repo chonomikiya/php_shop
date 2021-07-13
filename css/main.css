@@ -10,9 +10,9 @@ div{
 /* ヘッダー */
 header{
      width: auto;
-    height: 120px;
+    height: 80px;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 dt{
     text-align: center;
@@ -29,7 +29,7 @@ dt{
 /* フロントイメージ */
 .main-visual{
     width: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .main-image{
     width: auto;
@@ -54,6 +54,9 @@ dt{
 .search-form{
     display: flex;
     justify-content: center;
+}
+.search-form input[type="text"]{
+    width: 100%;
 }
 .side-list-title{
     text-align: center;
@@ -113,7 +116,7 @@ ul.breadcrumb li a{
 footer{
     clear: both;
     width: 100%;
-    height: 120px;
+    height: 80px;
     position: absolute;
     bottom: 0;
 }
