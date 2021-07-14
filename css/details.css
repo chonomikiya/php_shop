@@ -1,0 +1,80 @@
+.product-details{
+    margin: auto;
+}
+.details-container{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(6,50px);
+    justify-self: center;
+    align-self: center;
+    grid-gap: 10px 0;
+    grid-template-areas: 
+    "product-img    product-img     namehead        namebody"
+    "product-img    product-img     categoryh       categoryb"
+    "product-img    product-img     areahead        areabody"
+    "product-img    product-img     enpty           enpty"
+    "product-img    product-img     product-price   product-price"
+    "product-img    product-img     add-cart        see-the-cart"
+    ;
+}
+.details-container *:not(product-img,product-img img){
+    padding: 5px;
+}
+.details-container add-cart,see-the-cart{
+    margin: auto;
+}
+product-img{
+    grid-row: 1/7;
+    grid-column: 1/3;
+    margin: auto;
+}
+product-img img{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+namehead{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+namebody{
+    grid-row: 1/2;
+    grid-column: 4/6;
+}
+categoryh{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+categoryb{
+    grid-row: 2/3;
+    grid-column: 4/6;
+}
+areahead{
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+areabody{
+    grid-row: 3/4;
+    grid-column: 4/6;
+}
+product-price{
+    grid-row: 5/6;
+    grid-column: 3/6;
+}
+add-cart{
+    grid-row: 6/7;
+    grid-column: 3/4;
+}
+see-the-cart{
+    grid-row: 6/7;
+    grid-column:4/6;
+}
+
+.details-container dl dt ,dd{
+    text-align:left;
+    margin: 0 20px;
+}
+.product-details thead th{
+    text-align: center;
+    margin: auto;
+}
