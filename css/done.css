@@ -1,0 +1,7 @@
+.product-buynow{
+    width: 400px;
+    margin: auto;
+}
+.product-buynow > * h4{
+    margin: 20px auto;
+}

@@ -1,15 +1,66 @@
 .cart-wrap{
     border: solid;
-    width: 800px;
-    height: 200px;
+    width: 806px;
+    height: 206px;
     margin: auto;
+    margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(5,auto);
-    grid-template-rows: repeat(4,auto);
-    grid-template-areas: 
-    "cart-img       cart-img        cart-name       cart-name       cart-name"
-    "cart-img       cart-img        "
-    "cart-img       cart-img        "
-    "cart-img       cart-img        "
-    ;
+    grid-template-columns: repeat(16,50px);
+    grid-template-rows: repeat(4,50px);
 }
+.cart-wrap > cart-img{
+    grid-column: 1/5;
+    grid-row: 1/5;
+    margin: auto;
+}
+.cart-wrap > cart-img img{
+    height: 150px;
+    width: 150px;
+}
+.cart-wrap > cart-name{
+    grid-column: 6/13;
+    grid-row: 1/2;
+}
+.cart-wrap > cart-name h2{
+    text-align: justify;
+}
+.cart-wrap > cart-category{
+    grid-column: 6/13;
+    grid-row: 2/3;
+}
+.cart-wrap > cart-num{
+    grid-column: 6/13;
+    grid-row: 3/5;
+}
+.cart-wrap > cart-price{
+    grid-column: 13/17;
+    grid-row: 1/2;
+}
+.cart-wrap > cart-price select{
+    width: 100%;
+    height: 100%;
+}
+
+.cart-wrap > cart-price h2{
+    text-align: center;
+}
+.sum{
+    width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+.sum > h2{
+    text-align: end;
+}
+.go-order{
+    width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.go-order input{
+    width: auto;
+}
+

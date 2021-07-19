@@ -1,0 +1,21 @@
+.order-form{
+    width: 600px;
+    height: 800px;
+}
+.order-form > form h4{
+    margin-top: 20px;
+}
+.mail{
+    width: 400px;
+}
+.address-num{
+    width: 100px;
+}
+.address{
+    width: 400px;
+}
+.done-order{
+    margin: 80px auto;
+    display: flex;
+    justify-content: flex-end;
+}
