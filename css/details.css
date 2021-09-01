@@ -27,6 +27,7 @@ product-img{
     grid-row: 1/7;
     grid-column: 1/3;
     margin: auto;
+    height: auto;
 }
 product-img img{
     width: 350px;

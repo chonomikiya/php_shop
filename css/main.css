@@ -51,6 +51,16 @@ dt{
     margin-bottom: 20px;
     width: auto;
 }
+.side-child a{
+    color: black;
+    text-decoration: none;
+}
+.side-child .row:hover{
+    background-color: #F1F1F1;
+}
+.side-border{
+    border: solid 1px;
+}
 .search-form{
     display: flex;
     justify-content: center;
